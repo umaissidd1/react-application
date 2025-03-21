@@ -30,7 +30,7 @@ const SmartHome = () => {
       SmartHome
       <div>
         {!isHome ? (
-          <button className="enter-btn" onCLick={enterRoom}>
+          <button className="enter-btn" onClick={enterRoom}>
             Enter Room
           </button>
         ) : (
@@ -40,20 +40,29 @@ const SmartHome = () => {
             <div className="device-grid"></div>
             <div
               className={`device light ${light ? "on" : "off"}`}
-              onClick={() => setLights(!light)}
+              onClick={() => setLight(!light)}
             >
               Lights {light ? "ON" : "OFF"}
             </div>
 
-            <div className={`device tv ${tv ? "on" : "off"}`}>
+            <div
+              className={`device tv ${tv ? "on" : "off"}`}
+              onClick={() => setTv(!tv)}
+            >
               TV {tv ? "ON" : "OFF"}
             </div>
 
-            <div className={`device ac ${ac ? "on" : "off"}`}>
+            <div
+              className={`device ac ${ac ? "on" : "off"}`}
+              onClick={() => setAc(!ac)}
+            >
               Air Conditioner {ac ? "ON" : "OFF"}
             </div>
 
-            <div className={`device fan ${fan ? "on" : "off"}`}>
+            <div
+              className={`device fan ${fan ? "on" : "off"}`}
+              onClick={() => setFan(!fan)}
+            >
               Fan {fan ? "ON" : "OFF"}
             </div>
 

@@ -1,11 +1,20 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import API from "./components/API";
+import ToggleSwitcher from "./components/ToggleSwitcher";
+import SmartHome from "./components/SmartHome";
+import ToDoList from "./components/ToDoList";
+import WeatherAPI from "./components/WeatherAPI";
+
+import UserSearch from "./components/UserSearch";
 
 const App = () => {
   return (
     <>
-      <API></API>
+      {/* <SmartHome></SmartHome> */}
+      {/* <ToDoList></ToDoList> */}
+      {/* <WeatherAPI></WeatherAPI> */}
+      <UserSearch></UserSearch>
     </>
   );
 };
