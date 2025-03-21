@@ -7,6 +7,10 @@ import ToDoList from "./components/ToDoList";
 import WeatherAPI from "./components/WeatherAPI";
 
 import UserSearch from "./components/UserSearch";
+import FilterTable from "./components/Filtertable";
+import FilterTablee from "./components/FilterTablee";
+import ProductCatalog from "./components/ProductCatalog";
+import MoviesFiltering from "./components/MoviesFiltering";
 
 const App = () => {
   return (
@@ -14,7 +18,11 @@ const App = () => {
       {/* <SmartHome></SmartHome> */}
       {/* <ToDoList></ToDoList> */}
       {/* <WeatherAPI></WeatherAPI> */}
-      <UserSearch></UserSearch>
+      {/* <UserSearch></UserSearch> */}
+      {/* <FilterTable></FilterTable> */}
+      {/* <FilterTablee></FilterTablee> */}
+      {/* <ProductCatalog></ProductCatalog> */}
+      <MoviesFiltering></MoviesFiltering>
     </>
   );
 };
