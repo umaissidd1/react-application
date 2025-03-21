@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2e;
+    color: white;
+  }
+  
+  /* Room Container */
+  .room {
+    text-align: center;
+    padding: 40px;
+    background: #2a2a3c;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease-in-out;
+    width: 350px;
+  }
+  
+  /* Enter & Leave Buttons */
+  .enter-btn,
+  .leave-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #008cba;
+    color: white;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .leave-btn {
+    background-color: #ff4444;
+  }
+  
+  .enter-btn:hover {
+    background-color: #005f73;
+  }
+  
+  .leave-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Devices */
+  .devices h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .devices p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Device Grid */
+  .device-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Individual Devices */
+  .device {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  /* On States */
+  .light.on {
+    background: #ffdd57;
+    color: black;
+  }
+  
+  .tv.on {
+    background: #ff6b6b;
+  }
+  
+  .ac.on {
+    background: #3498db;
+  }
+  
+  .fan.on {
+    background: #2ecc71;
+  }
+  
+  /* Off States */
+  .light.off,
+  .tv.off,
+  .ac.off,
+  .fan.off {
+    background: #555;
+    color: white;
+    opacity: 0.5;
+  }
+  
