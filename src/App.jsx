@@ -11,6 +11,8 @@ import FilterTable from "./components/Filtertable";
 import FilterTablee from "./components/FilterTablee";
 import ProductCatalog from "./components/ProductCatalog";
 import MoviesFiltering from "./components/MoviesFiltering";
+import PersonApiFiltering from "./components/PersonApiFiltering";
+import ToDoLists from "./components/ToDoLists";
 
 const App = () => {
   return (
@@ -22,7 +24,9 @@ const App = () => {
       {/* <FilterTable></FilterTable> */}
       {/* <FilterTablee></FilterTablee> */}
       {/* <ProductCatalog></ProductCatalog> */}
-      <MoviesFiltering></MoviesFiltering>
+      {/* <MoviesFiltering></MoviesFiltering> */}
+      {/* <PersonApiFiltering></PersonApiFiltering> */}
+      <ToDoLists></ToDoLists>
     </>
   );
 };

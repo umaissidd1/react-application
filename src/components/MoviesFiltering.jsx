@@ -98,9 +98,9 @@ const MoviesFiltering = () => {
 
   const resetFilter = () => {
     setFilter({ search: "", genre: "", rating: "" });
+    setMovies(moviesData);
   };
 
-  // Apply filters to the state movies
   let filteredMovies = movies.filter((movie) =>
     movie.title.toLowerCase().includes(filter.search.toLowerCase())
   );
@@ -118,7 +118,7 @@ const MoviesFiltering = () => {
   }
 
   return (
-    <div>
+    <div style={{ height: "100vh", width: "60em" }}>
       <h2>Movies Filtering</h2>
       <input
         name="search"
@@ -146,7 +146,11 @@ const MoviesFiltering = () => {
       </select>
       <button onClick={resetFilter}>Reset Filter</button>
 
-      <table border="1" cellPadding={5}>
+      <table
+        border="1"
+        cellPadding={5}
+        style={{ height: "100vh", width: "60em" }}
+      >
         <thead>
           <tr>
             <th>ID</th>
